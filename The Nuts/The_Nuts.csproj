@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4FE893BA-FC59-4C7D-8B68-5CA22D34D179}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>The_Nuts</RootNamespace>
+    <AssemblyName>The Nuts</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Users\CMR\Documents\구디 아카데미\수업코드\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BalzuForm\BalzuCartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BalzuForm\BalzuCartForm.Designer.cs">
+      <DependentUpon>BalzuCartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BalzuForm\BalzuIngForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BalzuForm\BalzuIngForm.Designer.cs">
+      <DependentUpon>BalzuIngForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BalzuForm\BalzuUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BalzuForm\BalzuUserControl.Designer.cs">
+      <DependentUpon>BalzuUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BalzuForm\ExcelExportClass.cs" />
+    <Compile Include="BalzuForm\ExcelPopUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BalzuForm\ExcelPopUpForm.Designer.cs">
+      <DependentUpon>ExcelPopUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BalzuForm\ImGoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BalzuForm\ImGoFrm.Designer.cs">
+      <DependentUpon>ImGoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BalzuForm\NeedBalzuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BalzuForm\NeedBalzuForm.Designer.cs">
+      <DependentUpon>NeedBalzuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\BOMCUDFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\BOMCUDFrm.Designer.cs">
+      <DependentUpon>BOMCUDFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\BOMFRFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\BOMFRFrm.Designer.cs">
+      <DependentUpon>BOMFRFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\BOMMainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\BOMMainFrm.Designer.cs">
+      <DependentUpon>BOMMainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\MaterialDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\MaterialDetailFrm.Designer.cs">
+      <DependentUpon>MaterialDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JeanForm\ProductControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JeanForm\ProductControl.designer.cs">
+      <DependentUpon>ProductControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JeanForm\ProductCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JeanForm\ProductCreate.Designer.cs">
+      <DependentUpon>ProductCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JeanForm\ProductManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JeanForm\ProductManager.Designer.cs">
+      <DependentUpon>ProductManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JeanForm\ProductOrderInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JeanForm\ProductOrderInfo.Designer.cs">
+      <DependentUpon>ProductOrderInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Merial_Company\CompanyMenagementFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Merial_Company\CompanyMenagementFrm.Designer.cs">
+      <DependentUpon>CompanyMenagementFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Merial_Company\metrialFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Merial_Company\metrialFrm.Designer.cs">
+      <DependentUpon>metrialFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Merial_Company\MetrialInsertUpdateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Merial_Company\MetrialInsertUpdateFrm.Designer.cs">
+      <DependentUpon>MetrialInsertUpdateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service\BOMService.cs" />
+    <Compile Include="Service\CommonService.cs" />
+    <Compile Include="Service\CompanyService.cs" />
+    <Compile Include="Service\MerialService.cs" />
+    <Compile Include="Service\ProductService.cs" />
+    <Compile Include="TheNutsMainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheNutsMainFrm.Designer.cs">
+      <DependentUpon>TheNutsMainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\CommonUtil.cs" />
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BalzuForm\BalzuCartForm.resx">
+      <DependentUpon>BalzuCartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BalzuForm\BalzuIngForm.resx">
+      <DependentUpon>BalzuIngForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BalzuForm\BalzuUserControl.resx">
+      <DependentUpon>BalzuUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BalzuForm\ExcelPopUpForm.resx">
+      <DependentUpon>ExcelPopUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BalzuForm\ImGoFrm.resx">
+      <DependentUpon>ImGoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BalzuForm\NeedBalzuForm.resx">
+      <DependentUpon>NeedBalzuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\BOMCUDFrm.resx">
+      <DependentUpon>BOMCUDFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\BOMFRFrm.resx">
+      <DependentUpon>BOMFRFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\BOMMainFrm.resx">
+      <DependentUpon>BOMMainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\MaterialDetailFrm.resx">
+      <DependentUpon>MaterialDetailFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JeanForm\ProductControl.resx">
+      <DependentUpon>ProductControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JeanForm\ProductCreate.resx">
+      <DependentUpon>ProductCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JeanForm\ProductManager.resx">
+      <DependentUpon>ProductManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JeanForm\ProductOrderInfo.resx">
+      <DependentUpon>ProductOrderInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Merial_Company\CompanyMenagementFrm.resx">
+      <DependentUpon>CompanyMenagementFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Merial_Company\metrialFrm.resx">
+      <DependentUpon>metrialFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Merial_Company\MetrialInsertUpdateFrm.resx">
+      <DependentUpon>MetrialInsertUpdateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheNutsMainFrm.resx">
+      <DependentUpon>TheNutsMainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="BalzuForm\거래명세서Excel.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TheNutsDAC\TheNutsDAC.csproj">
+      <Project>{b4b23a4d-d8e7-4609-a728-9a90629af252}</Project>
+      <Name>TheNutsDAC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TheNutsVO\TheNutsVO.csproj">
+      <Project>{e8285b35-560c-46a7-9867-bdd98e997509}</Project>
+      <Name>TheNutsVO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\건블루베리.PNG" />
+    <Content Include="Image\건포도.PNG" />
+    <Content Include="Image\병아리콩.PNG" />
+    <Content Include="Image\자브라질넛.PNG" />
+    <Content Include="Image\아몬드.PNG" />
+    <Content Include="Image\캐슈넛.PNG" />
+    <Content Include="Image\자재크렌베리.PNG" />
+    <Content Include="Image\호두.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
